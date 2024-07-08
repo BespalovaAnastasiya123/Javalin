@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Persons:
+<ul id = "persons"></ul>
+<script>
+    async function get(){
+    persons =
+    await fetch('http:/localhost:7070/persons',{
+    method:'GET',
+    headers:{
+    'Accept': application/json'
+    'Content-Type':application/json'
+    },
+    body:JSON.stringify({"name": "Ivan", "surname": "Ivanov"})
+    )};
+    }
+    get();
+    </script>
+</body>
+</html>
